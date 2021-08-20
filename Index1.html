@@ -1,0 +1,96 @@
+<!DOCtype html>
+<html>
+<head>
+    <title> Smile Foundation India </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body class="background">
+    <nav class="navbar">
+        <h1 class="logo">Smile Foundation India </h1>
+        <ul>
+            <li><a href="#Home" claas="active"><i class="fa fa-fw fa-home"></i>Home</a></li>
+            <li><a href="#About"><i class="fa fa-fw fa-user"></i>About</a></li>
+            <li><a href="#Contact"><i class="fa fa-fw fa-envelope"></i>Contact</a></li>
+        </ul>
+    </nav>
+  
+        <div class = "header">
+      <section id ="Home">
+        <div>
+            <h1 class="head-text1">Making someone Smile<br> is the greatest investment.</h1>
+            <p class="p-text1"><b>
+                Smile Foundation, a non-profit organization </b>in india is to empower underprivileged children,</br>
+                 youth and women through relevant education, </br>innovative healthcare and market-focused livelihood programmes.</br></p>
+                
+                 <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HnKeoeZ86r0aWp" async>
+                  </script> </form>
+        </div>
+      </section>
+      </div>
+      <f1 class="foot-text1">This website is made by Harsha Y. Khadgi.</f1>
+     
+      <section id="About">
+        <div class="About"> 
+          <h1 class="About-h1"> A bit about us</h1>
+                <p class="About-p">Smile Foundation believes that unless</br> members of the civil society are involved proactively </br>in the process of development, sustainable change will not happen. </br>
+                    Believing in this principle of 'Civic Driven Change',</br> Smile Foundation sensitises the civil society in order </br>to make them partners in its mission.</p>
+                    
+                    <button class="About-btn" onclick="window.location.href = 'https://www.smilefoundationindia.org/';">Read More About-Us</button>
+
+        </div>
+      </section>
+      <section id="Contact">
+      <form class="form1">
+        <script>
+            function validation()
+            {
+             var name=document.getElementById("name").value;
+             var email=document.getElementById("email").value;
+             var subject=document.getElementById("subject").value;
+             var message=document.getElementById("message").value;
+             if(name=="")
+             {
+               alert("Please Enter Name");
+             }
+             else if(email=="")
+             {
+               alert("Please Enter Email Id");
+             }
+             else if(subject=="")
+             {
+               alert("Please Enter subject");
+             }
+             else if(message=="")
+             {
+               alert("Please Write Message");
+             }
+             else 
+             {
+               alert("Message Send Successfully");
+             }
+            }
+          </script>
+        <p>
+        <div class="form_details ">
+          <br><b>
+        <label for="name"><p>NAME</p></label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          <br>
+        <label for="name">EMAIL</label>
+        <input type="text" id="email" name="email" placeholder="Enter email address">
+          <br>
+        <label for="name">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Enter subject">
+          <br>
+        <label for="name">MESSAGE</label>
+        <textarea name="text" id="message" rows="2" placeholder="Enter Message"></textarea>
+        </b>
+          <br>
+        <button type="submit" value="submit" class="btn" onclick="validation()" >Send Message</button>
+        </div>
+        </p>
+      </form> 
+    </section>
+</body>
+</html>
